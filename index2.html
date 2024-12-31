@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ff.js"></script>
+<style>
+*{
+    box-sizing:content-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url("hi.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bing{
+    background-color: rgba(0,0,0,0.6);
+    height:100v;
+    padding: 30px;
+    width: 70vh;
+    border-radius: 30px;
+}
+.op{
+  padding: 5px 50px;
+}
+
+h1{
+    display: flex;
+    border-radius: 30px ;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 30px;
+    opacity: 80%;
+}
+
+.te,.op,.sub{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 30px;
+    padding: 8px 20px;
+}
+
+.em{
+    font-size: large;
+    padding: 10px;
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+</style>
+</head>
+<body>
+    <center>
+<div class="bing">
+<h1>Try Something New...</h1>
+<h2 style="color:rgba(255,255,255,0.8)"> Wanna Talk about Indian Festivals?</h2>
+<br>
+<form action="#" target="_self">
+
+<select class="op">
+    <option value="Diwali">Diwali</option>
+    <option value="Dasara">Dasara</option>
+    <option value="Sankranthi">Sankranthi</option>
+    <option value="Vinayaka Chavithi">Vinayaka Chavithi</option>
+    <option value="Ramzan">Ramzan</option>
+    <option value="Bakridh">Bakridh</option>
+    <option value="Christmas">Christmas</option>
+    <option value="Ugadhi">Ugadhi</option>
+</select>
+<br><br>
+<textarea class="te" rows="5" cols="55"></textarea> 
+<br><br>
+<input class="em" type="text" placeholder="Enter receiver's Email">
+<br><br>
+<button class="sub">Add to List</button>
+<br><br>
+<input class="em" type="text">
+<br><br>
+<input class="sub" onclick="sendGreet(event)" type="submit">
+<input class="sub" type="reset">
+</form>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ff.js"></script>
+
+<style>
+    *{
+        box-sizing: border-box;
+        
+        font-family:Verdana, sans-serif;
+    }
+    
+    body{
+        background:url("hi.jpg");
+        background-size: cover;
+        background-attachment: scroll;
+        background-clip: content-box;
+        background-repeat: repeat; 
+    }
+    
+    h1{
+        padding: 20px;
+        display: flex;
+        border-radius: 40px;
+        color: white;
+        background-color: black;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .boxo{
+        display: grid;   
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 70vh;
+        width: 47vh;
+        border-radius: 30px;
+    }
+    
+    .sub{
+        background-color: orange;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color:black;
+    }
+    
+    .k1{
+        border-radius: 30px;
+        padding: 10px 50px;
+        opacity: 0.8;
+    }
+    
+    .c1{
+        color: white;
+    }
+</style>
+
+</head>
+<body>
+    <center>
+<h1>Greeting Card Customization</h1>
+<div class="boxo">
+<h1 style="font-family:verdana;">Sign In</h1>
+<form action="index2.html" target="_blank" method="get">
+<input class="k1" type="text" placeholder="Enter First Name" required><br><br>
+<input class="k1" type="text" placeholder="Enter Last Name" required><br><br>
+<div class="c1">
+<label>
+    <input type="radio" name="gender" value="male"> Male
+</label>
+<label>
+    <input type="radio" name="gender" value="female"> Female
+</label> 
+<label>
+    <input type="radio" name="gender" value="others"> Others
+</label>
+</div><br>
+<input class="k1" type="text" placeholder="Enter Email" required>
+<br><br>
+<input class="k1" type="text" placeholder="Enter Phone number" maxlength="10" required>
+<br><br><br>
+<input class="sub" type="submit"> &nbsp;&nbsp;&nbsp;
+<input class="sub" type="reset" >
+</form>
+</div>
+</center>
+</body>
+</html>
